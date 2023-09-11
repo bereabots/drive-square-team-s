@@ -12,8 +12,23 @@ int main(int argc, const char *argv[])
     float vel = 0.5;
     int speed = 2;
 
-    for (int i = 0, i > 4)
         robot.drive(vel,0,0);
+        sleepFor(2);
+        robot.drive(0,vel,0);
+        sleepFor(2);
+        robot.drive(-vel,0,0);
+        sleepFor(2);
+        robot.drive(0,-vel,0);
+        sleepFor(2);
+    robot.drive(vel,0,0);
+        sleepFor(2);
+        robot.drive(0,vel,0);
+        sleepFor(2);
+        robot.drive(-vel,0,0);
+        sleepFor(2);
+        robot.drive(0,-vel,0);
+        sleepFor(2);
+    robot.drive(vel,0,0);
         sleepFor(2);
         robot.drive(0,vel,0);
         sleepFor(2);
