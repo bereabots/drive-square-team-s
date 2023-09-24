@@ -9,7 +9,37 @@ int main(int argc, const char *argv[])
 {
     // Initialize the robot.
     mbot_bridge::MBot robot;
+    float vel = 0.5;
+    int speed = 2;
 
+        robot.drive(vel,0,0);
+        sleepFor(2);
+        robot.drive(0,vel,0);
+        sleepFor(2);
+        robot.drive(-vel,0,0);
+        sleepFor(2);
+        robot.drive(0,-vel,0);
+        sleepFor(2);
+    robot.drive(vel,0,0);
+        sleepFor(2);
+        robot.drive(0,vel,0);
+        sleepFor(2);
+        robot.drive(-vel,0,0);
+        sleepFor(2);
+        robot.drive(0,-vel,0);
+        sleepFor(2);
+    robot.drive(vel,0,0);
+        sleepFor(2);
+        robot.drive(0,vel,0);
+        sleepFor(2);
+        robot.drive(-vel,0,0);
+        sleepFor(2);
+        robot.drive(0,-vel,0);
+        sleepFor(2);
+    
+
+    
+    
     /**
      * TODO: (P1.1) Write code to make the robot drive in a square. Then,
      * modify your code so that the robot drives in a square 3 times.
